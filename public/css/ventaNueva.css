@@ -1,0 +1,113 @@
+.sui-button-cell
+{
+    text-align: center;
+}
+
+.deleteButton img
+{
+    margin-right: 3px;
+    vertical-align: bottom;
+}
+
+.bigicon
+{
+    color: #5CB85C;
+    font-size: 20px;
+}
+
+.divGrid {
+  margin-top: 2%;
+}
+
+.divTextCliente {
+  margin-top: 2%;
+  margin-left: 20px;
+}
+
+.divTextProducto {
+  margin-top: 4%;
+  margin-left: 20px;
+}
+
+.divTextCantidad {
+  margin-top: 1%;
+  margin-left: 20px;
+}
+
+.labelFecha {
+  margin-left: 90%;
+  font-size: 20px;
+}
+
+.button {
+  position: relative;
+  background-color: #4CAF50;
+  border: none;
+  font-size: 28px;
+  color: #FFFFFF;
+  padding: 20px;
+  width: 200px;
+  text-align: center;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+  text-decoration: none;
+  overflow: hidden;
+  cursor: pointer;
+
+}
+
+.button:after {
+  content: "";
+  background: #f1f1f1;
+  display: block;
+  position: absolute;
+  padding-top: 300%;
+  padding-left: 350%;
+  margin-left: -20px !important;
+  margin-top: -120%;
+  opacity: 0;
+  transition: all 0.8s
+}
+
+.button:active:after {
+  padding: 0;
+  margin: 0;
+  opacity: 1;
+  transition: 0s
+}
+
+input {
+  height: 25px;
+}
+
+.imgAddp {
+  margin-left: 0;
+}
+
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 94%;
+    margin-left: 3%;
+}
+
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
+
+.labelResultados {
+  margin-top: 3%;
+  margin-left: 70%;
+  font-size: 24px;
+}
+
+.divButton {
+  margin-top: 3%;
+  margin-left: 70%;
+}
