@@ -27,12 +27,11 @@
                 <option value=" {{ $articulo->idArticulo }}">
             @endforeach
         </datalist>
-
+        <button type="button" onclick="agregarProducto()">Click me</button>
     </div>
-
-        <div class="divTextCantidad">
+    <div class="divTextCantidad">
         Cantidad
-        {{ Form::text('cantidad', 0) }}
+        {{ Form::text('cantidad', 0, ['id' => 'cantidad']) }}
     </div>
 
     <br> <br>
@@ -44,41 +43,20 @@
         <th>Precio</th>
         <th>Importe</th>
         </tr>
-        <tr>
-        <td>0001</td>
-        <td>C1</td>
-        <td>0</td>
-        <td>500.00</td>
-        <td>23/12/2017</td>
-        </tr>
-        <tr>
-        <td>0002</td>
-        <td>C2</td>
-        <td>0</td>
-        <td>400.50</td>
-        <td>01/01/2018</td>
-        </tr>
-        <tr>
-        <td>0003</td>
-        <td>C3</td>
-        <td>0</td>
-        <td>2000</td>
-        <td>01/03/2018</td>
-        </tr>
     </table>
     <div class="labelResultados">
         <label> Enganche: </label> <br>
         <label> Bonificación Enganche: </label><br>
         <label> Total: </label>
     </div>
-    <div class="divButton">
-        <button class="button"> Cancelar </button>
-        <button class="button"> Siguiente </button>
+    <div class="divButtond">
+        <button type="button" class="button" id="cancelar" onclick="window.location='/ventas/create';"> Cancelar </button>
+        <button type="button" class="button" id="siguiente" onclick="next()"> Siguiente </button>
     </div>
 {{ Form::close() }}
-<button onclick="agregarProducto()">Click me</button>
+
     <br> <br>
-    <table>
+    <table style="display:none;" id="abonos">
         <tr>
             <td>3 ABONOS DE</td>
             <td>$1125.33</td>

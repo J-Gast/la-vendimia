@@ -23,3 +23,5 @@ Route::resource('/articulos', 'ArticuloController');
 
 Route::resource('/ventas', 'VentaController');
 
+Route::get('/getclientes', 'ApiController@getAllClientes');
+

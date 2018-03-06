@@ -2,7 +2,7 @@
 
 @section('content')
 <div class="divButton" align="right">
-      <button class="button" onclick="window.location='/nuevaventa';">  <img src= {{ URL::asset('add.png') }} > <br> Nueva Venta </button>
+      <button class="button" onclick="window.location='/ventas/create';">  <img src= {{ URL::asset('add.png') }} > <br> Nueva Venta </button>
     </div>
     <h3 class="h3Header">Ventas Activas</h3>
   <table>

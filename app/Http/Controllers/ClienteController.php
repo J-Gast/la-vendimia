@@ -39,7 +39,14 @@ class ClienteController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $cliente = new Cliente;        
+        $cliente->idCliente = null;
+        $cliente->nombre = $request->nombre;
+        $cliente->apellidoPaterno = $request->apellidoPaterno;
+        $cliente->apellidoMaterno =$request->apellidoMaterno;
+        $cliente->RFC = $request->rfc;
+        $cliente->save();
+
     }
 
     /**
@@ -50,7 +57,7 @@ class ClienteController extends Controller
      */
     public function show($id)
     {
-        //
+        return Cliente::where('idCliente', $id) -> get();
     }
 
     /**
